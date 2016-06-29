@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html class="full" lang="en">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DRUNK WEBSITE mwahaha</title>
+    <title>DRUNK WEBSITE - Lesson 4</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +22,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -45,7 +42,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
+                            <li>
                         <a href="lesson4.html">Lesson 4</a>
 
                     </li>
@@ -78,22 +75,65 @@
     <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <h1>Drunk Website</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing xsygxjsgxsxselit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi tenetur eligendi.</p>
+            <div class="col-md-12">
+                <h1>Choose a Day</h1>
+                <p>Choose a day and see how I feel about it! You may be surprised!</p>
+                 <button onclick="myFaveDays()">Click me</button> 
+                 <p id="daytext"></p>
+                 <script type="text/javascript">function myFaveDays(daysOfTheWeek) {
+
+var daysOfTheWeek = prompt("like omg! what day is it?");
+
+switch(daysOfTheWeek) {
+case 'Monday':
+console.log("someones got a case of the mondays");
+document.getElementById("daytext").innerHTML = 'someones got a case of the mondays';
+break;
+case 'Tuesday':
+console.log("taco tuesday");
+document.getElementById("daytext").innerHTML = 'Tuesdays are great cause tacos!';
+break;
+case 'Wednesday':
+console.log ("Ugh....");
+document.getElementById("daytext").innerHTML = 'Ugh...dont get me started';
+break;
+case 'Thursday':
+console.log ('yay! general assembly day!');
+document.getElementById("daytext").innerHTML = 'yay! General assembly javascript fun time!!';
+break;
+case 'Friday':
+console.log ('Im gonna eat dinner and sleep so hard tonight!');
+document.getElementById("daytext").innerHTML = 'Im gonna eat dinner and sleep so hard tonight!';
+break;
+case 'Saturday':
+console.log ('YYYEEEZZZZ!!!!1 ITS SATURDAY');
+document.getElementById("daytext").innerHTML = 'YYYEEEZZZZ!!!!1 ITS SATURDAY';
+break;
+case 'Sunday':
+console.log ('bed bath and beyond and a glass of orange juice');
+document.getElementById("daytext").innerHTML = 'bed bath and beyond and a glass of orange juice';
+break;
+default:
+document.getElementById("daytext").innerHTML = 'What day are you trying to find? Days must have the first letter capitalized Ex: Sunday, Monday, Tuesday..etc';
+
+}
+}</script>
             </div>
         </div>
         <!-- /.row -->
     </div>
     <!-- /.container -->
 
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="jslesson4.js"></script>
+    <script src="js/lesson4.js"></script>
 
 </body>
 
 </html>
+
+

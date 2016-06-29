@@ -28,6 +28,8 @@
 </head>
 
 <body>
+<!--DO NOT DO INLINE JAVASCRIPT <body onload="window.alert('welcome to my app')">
+-->
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
@@ -45,7 +47,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
+                          <li>
                         <a href="lesson4.html">Lesson 4</a>
 
                     </li>
@@ -79,12 +81,22 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12">
-                <h1>Drunk Website</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing xsygxjsgxsxselit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi tenetur eligendi.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-    </div>
+                <h1>Welcome to Lesson 8<span id="name"> Whoever your are</span></h1>
+                <div id="hello">
+                <p>Welcome to lesson 8! And what a beautiful lesson it will be. Do you smell what the rock is cooking? A sweet perfume it is!</p>
+                 
+  <h2>Favorite Things</h2>
+  <ul id="fav-list">
+    <li class="fav-thing">Dog bites</li>
+    <li class="fav-thing">Bee Stings</li>
+    <li class="fav-thing">Feeling Bad</li>
+  </ul>
+
+  <form>
+    <input id="new-thing" />
+    <input id="new-thing-button" type="submit" value="Create new thing"></submit>
+  </form>
+
     <!-- /.container -->
 
     <!-- jQuery -->
@@ -92,7 +104,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="jslesson4.js"></script>
+    <script src="js/lesson8.js"></script>
 
 </body>
 
